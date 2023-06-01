@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=3.0, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Giữ khoảng cách</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    body{
+        background-image: url(/img/GettyImages-1215392772.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    /*---------body----------*/
+    .menu-full-size{
+        height: 50px;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        line-height: 50px;
+        z-index: 1;
+    }
+    .menu-full-size-inside{
+        height: 50px;
+        max-width: 80%;
+        width: 100%;
+        margin: auto;
+        display:block;
+    }
+    .logo-container{
+        min-width: fit-content;
+        position: absolute;
+        left: 15%;
+    }
+    .ul-container{
+        position: absolute;
+        right: 10%;
+    }
+    .ul-menu{
+        display: inline-flex;
+    }
+    .li-menu{
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+    .a-menu{
+        text-decoration: none;
+        color: rgb(35, 62, 180);
+    }
+    .a-menu:hover{
+        color: rgb(238, 71, 65);
+        transition: 0.3s;
+    }
+    /*--------------Menu-Top---------------*/
+    .menu-full-screen{
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: rgba(0,0,0, 0.9);;
+        width: 100%;
+        height: 0%;
+        text-align: center;
+        overflow-y: hidden;
+        transition: 0.5s;
+        z-index: 1;
+        overflow-y: scroll;
+    }
+    .menu-full-screen ul li{
+        padding: 8px;
+        text-decoration: none;
+        font-size: 30px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .menu-full-screen ul{
+        margin-top: 30px;
+    }
+    .closebtn {
+        text-decoration: none;
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 100px;
+        color: skyblue;
+    }
+    .closebtn:hover{
+        color: rgb(16, 58, 141);
+    }
+    .Menu-icon{
+        display: none;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        font-size: 40px;
+    }
+    .Menu-icon:after{
+        content: '';
+        clear: both;
+    }
+    .logo-container-mobile{
+        min-width: fit-content;
+        position: absolute;
+        left: 10%;
+        display: none;
+    }
+    @media screen and (max-width: 1050px){
+        .menu-full-size-inside{
+            display: none;
+        }
+        .Menu-icon{
+            display: block;
+        }
+        .logo-container-mobile{
+            display: block;
+        }
+    }
+    /*------------------Menu-Top-Full-Screen-----------------*/
+    .main-container{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        justify-content: center;
+        top: 50px;
+        margin-top: 30px;
+    }
+    .main-contain{
+        border-radius: 20px;
+        border: none;
+        border-bottom:solid 1px black;
+        width: 75%;
+        background-color: rgba(255, 255, 255, 0.945);
+        margin: auto;
+        margin-top: 20px;
+    }
+    .main-contain img {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-contain h1{
+        padding: 10px;
+        font-size: 35px;
+        color: rgb(236, 30, 30);
+        text-align: center;
+    }
+    .main-contain h2{
+        padding: 15px;
+        font-size: 30px;
+        color: rgb(236, 30, 30);
+    }
+    .main-contain p {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .main-contain ul{
+        list-style-type: disc;
+    }
+    .main-contain ul li{
+        display: list-item;
+    }
+    .main-contain p a{
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    .main-contain p a:hover{
+        font-size: 25px;
+        color: rgb(241, 20, 20);
+        transition: 0.3s;
+    }
+    .description{
+        width: fit-content;
+        display: block;
+        margin: auto;
+        color: rgba(158, 152, 152, 0.966);
+        font-size: 20px;
+        padding: 10px 0 10px 0;
+    }
+    /*------------------Main-Container-----------------------*/
+</style>
+<body>
+    <div class="menu-full-size">
+        <div class="menu-full-size-inside">
+            <div class="logo-container"><a href="/index.html"><img src="/img/logo_MDC.jpg" alt="Logo" class="logo"></a></div>
+            <div class="ul-container">
+                <ul class="ul-menu">
+                    <li class="li-menu"><a class="a-menu" href="/index.html">Home</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/KhauTrang.html">Hướng dẫn mang khẩu trang</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/RuaTay.html">Hướng dẫn rửa tay</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/KhoangCach.html">Hướng dẫn giữ khoảng cách</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/LienHe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+            <!-----------------MenuTopVersion-------------------->
+        <div class="logo-container-mobile"><a href="/index.html"><img src="/img/logo_MDC.jpg" alt="Logo" class="logo"></a></div>
+        <i src="" alt="" class="fa fa-bars Menu-icon" onclick="openNav()"></i>
+        <div class="menu-full-screen" id="menu-full-screen">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="ul-menu-full-screen">
+                <li class="li-menu"><a class="a-menu" href="/index.html">Home</a></li>
+                <li class="li-menu"><a class="a-menu" href="/KhauTrang.html">Hướng dẫn mang khẩu trang</a></li>
+                <li class="li-menu"><a class="a-menu" href="/RuaTay.html">Hướng dẫn rửa tay</a></li>
+                <li class="li-menu"><a class="a-menu" href="/KhoangCach.html">Hướng dẫn giữ khoảng cách</a></li>
+                <li class="li-menu"><a class="a-menu" href="/LienHe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--------------------Menu-Mobile----------------------------->
+    <div class="main-container">
+        <div class="main-contain">
+            <h1>Cách ly giao tiếp xã hội</h1>
+            <h2>Cách ly giao tiếp xã hội là gì?</h2>
+            <p>Cách ly giao tiếp xã hội, còn gọi là "tạo khoảng cách" có nghĩa là duy trì khoảng cách an toàn giữa quý vị và những người khác không sống cùng nhà của quý vị.</p>
+            <p>Để thực hiện cách ly giao tiếp xã hội hoặc giữ khoảng cách, hãy duy trì cự ly tối thiểu 6 feet (khoảng 2 sải tay) với những người khác không ở cùng nhà quý vị, cả ở không gian trong nhà và ngoài trời.</p>
+            <p>Nên kết hợp cách ly giao tiếp xã hội với các biện pháp bảo vệ hàng ngày để giảm lây lan COVID-19, bao gồm đeo khẩu trang, tránh dùng tay chưa rửa chạm vào mặt, thường xuyên rửa tay bằng xà phòng và nước trong ít nhất 20 giây.</p>
+        </div>
+        <div class="main-contain">
+            <h2>Tại sao phải thực hiện cách ly giao tiếp xã hội?</h2>
+            <p>COVID-19 chủ yếu lây lan ở những người tiếp xúc gần (trong khoảng 6 feet hoặc 2 mét) trong một thời gian dài. Vi-rút lây lan khi một người nhiễm bệnh ho, hắt hơi, hoặc nói chuyện và những giọt nhỏ từ miệng hoặc mũi của họ bắn vào không khí và rơi vào miệng hoặc mũi của những người gần đó. Những giọt bắn này cũng có thể bị hít vào phổi. Những nghiên cứu gần đây cho thấy người nhiễm nhưng không có triệu chứng cũng có khả năng đóng vai trò lớn trong sự lây lan của COVID-19. Vì mọi người có thể làm lây truyền vi-rút trước khi họ biết mình bị bệnh nên việc thực hiện biện pháp giữ khoảng cách tối thiểu 6 feet với người khác khi có thể là rất quan trọng, ngay cả khi quý vị hay người khác không có bất kỳ triệu chứng nào. Thực hiện cách ly giao tiếp xã hội là rất cần thiết đối với người có nguy cơ cao mắc các bệnh nghiêm trọng từ COVID-19.</p>
+            <p>Nếu quý vị bị nhiễm bệnh COVID-19, có các triệu chứng phù hợp với biểu hiện của COVID-19 hoặc đã tiếp xúc gần với người nhiễm COVID-19, việc quan trọng là quý vị phải ở nhà và giữ khoảng cách với người khác cho đến thời điểm an toàn để ở gần người khác.</p>
+            <p>COVID-19 có thể sống hàng giờ hoặc nhiều ngày trên một bề mặt, tùy thuộc vào các yếu tố như ánh sáng mặt trời, độ ẩm và loại bề mặt. Một người có thể nhiễm COVID-19 khi chạm tay vào bề mặt hoặc đồ vật có dính vi-rút trên đó, sau đó lại chạm vào miệng, mũi hoặc mắt của họ. Tuy nhiên người ta không cho rằng đây là con đường chính lây lan vi-rút. Việc cách ly giao tiếp xã hội giúp hạn chế số lần tiếp xúc với bề mặt nhiễm vi-rút và người bị lây nhiễm ở ngoài nhà.</p>
+            <p>Mặc dù nguy cơ tiến triển bệnh nghiêm trọng có thể khác nhau ở mỗi người, nhưng bất kỳ ai cũng có thể nhiễm và làm lây lan COVID-19. Mọi người đều có vai trò trong việc làm chậm sự lây lan dịch bệnh và bảo vệ bản thân, gia đình và cộng đồng của mình. Bên cạnh thực hiện các biện pháp phòng ngừa COVID-19 hàng ngày, duy trì khoảng cách giữa quý vị và những người khác là một trong những công cụ tốt nhất để phòng tránh phơi nhiễm với vi-rút này và làm chậm sự lây lan của vi-rút trong các cộng đồng.</p>
+            <a href="/img/khoang-cach.jpg" target="_blank"><img src="/img/khoang-cach.jpg" alt="Khoảng cách an toàn"></a>
+            <div class="description">Khoảng cách an toàn</div>
+        </div>
+        <div class="main-contain">
+            <h2>Cài đặt ứng dụng  BlueZone</h2>
+            <p>Bluezone, ứng dụng bảo vệ cộng đồng, phòng chống dịch Covid-19 của Công ty BKAV đã được Bộ Thông tin và Truyền thông, Bộ Y Tế ra mắt chính thức.</p>
+            <p>Đây là ứng dụng sử dụng công nghệ định vị Bluetooth năng lượng thấp, viết tắt là BLE (Bluetooth low energy). Các smartphone được cài đặt Bluezone có thể giao tiếp với nhau ở khoảng cách 2 mét, ghi nhận sự tiếp xúc gần, tiếp xúc vào lúc nào và trong bao lâu.</p>
+            <p>Điều này sẽ giúp người dùng biết được và kiểm soát các tiếp xúc gần nếu phát hiện ca nhiễm Covid-19 F0. Cụ thể, trong quá trình sinh hoạt hàng ngày, khi người dùng có tiếp xúc, ứng dụng Bluezone trên điện thoại của họ sẽ tự "giao tiếp" với nhau. Nếu có tiếp xúc gần trong khoảng cách 2m. Thiết bị sẽ tự động ghi nhận vào nhật ký.</p>
+            <a href="/img/BLUEZONE1.jpg" target="_blank"><img src="/img/BLUEZONE1.jpg" alt="Bluezone"></a>
+            <div class="description">Ứng dụng Bluezone</div>
+        </div>
+        <div class="main-contain">
+            <h2>Hệ thống hoạt động như thế nào</h2>
+            <p>Bước 1: tham gia vào cộng đồng Bluezone (cài đặt bluezone app vào điện thoại di động, có sẵn cho android và iOS). Truy cập vào trang <a href="https://www.bluezone.gov.vn/">https://www.bluezone.gov.vn/</a></p>
+            <p>Bước 2: ứng dụng ghi nhận quá trình tiếp xúc gần (< 2m) với cộng đồng Bluezone (vào lúc nào, bao lâu)</p>
+            <p>Bước 3: nếu có người nhiễm Covid-19 (F0), cơ quan y tế có thẩm quyền sẽ nhập dữ liệu F0 vào hệ thống.</p>
+            <p>Bước 4: Hệ thống sẽ giử dữ liệu F0 đến tất cả các máy trong cộng đồng Bluezone.</p>
+            <p>Bước 5: Ứng dụng Bluezone trên máy sẽ so sánh lịch sử tiếp xúc với dữ liệu F0</p>
+            <p>Bước 6: nếu dữ liệu F0 trùng khớp với dữ liệu tiếp xúc.</p>
+            <p>Bước 7: ứng dụng cảnh báo người dùng có nguy cơ lây nhiễm Covid-19 khi tiếp xúc với người nhiễm trong thời gian 10 phút ở khoảng cách dưới 2m trong 14 ngày.</p>
+            <p>Bước 8: màn hình hiển thị hướng dẫn liên hệ với cơ quan y tế có thẩm quyền để nhận trợ giúp.</p>
+            <p>Bước 9: ứng dụng có thể cảnh báo cho người thuộc nhóm F2 (nhóm tiếp xúc gần với F1).</p>
+            <a href="/img/he-thong-blue-zone.png" target="_blank"><img src="/img/he-thong-blue-zone.png" alt="Hệ Thống Bluezone"></a>
+            <div class="description">Hệ Thống Bluezone</div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("menu-full-screen").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("menu-full-screen").style.height = "0%";
+        }
+        </script>
+</body>
+</html>

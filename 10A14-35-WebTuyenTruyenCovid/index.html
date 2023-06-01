@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=3.0, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tuyen Truyen Covid 19</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    body{
+        background-image: url(/img/GettyImages-1215392772.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    /*---------body----------*/
+    .menu-full-size{
+        height: 50px;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        line-height: 50px;
+        z-index: 1;
+    }
+    .menu-full-size-inside{
+        height: 50px;
+        max-width: 80%;
+        width: 100%;
+        margin: auto;
+        display:block;
+    }
+    .logo-container{
+        min-width: fit-content;
+        position: absolute;
+        left: 15%;
+    }
+    .ul-container{
+        position: absolute;
+        right: 10%;
+    }
+    .ul-menu{
+        display: inline-flex;
+    }
+    .li-menu{
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+    .a-menu{
+        text-decoration: none;
+        color: rgb(35, 62, 180);
+    }
+    .a-menu:hover{
+        color: rgb(238, 71, 65);
+        transition: 0.3s;
+    }
+    /*--------------Menu-Top---------------*/
+    .menu-full-screen{
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: rgba(0,0,0, 0.9);;
+        width: 100%;
+        height: 0%;
+        text-align: center;
+        overflow-y: hidden;
+        transition: 0.5s;
+        z-index: 1;
+        overflow-y: scroll;
+    }
+    .menu-full-screen ul li{
+        padding: 8px;
+        text-decoration: none;
+        font-size: 30px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .menu-full-screen ul{
+        margin-top: 30px;
+    }
+    .closebtn {
+        text-decoration: none;
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 100px;
+        color: skyblue;
+    }
+    .closebtn:hover{
+        color: rgb(16, 58, 141);
+    }
+    .Menu-icon{
+        display: none;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        font-size: 40px;
+    }
+    .Menu-icon:after{
+        content: '';
+        clear: both;
+    }
+    .logo-container-mobile{
+        min-width: fit-content;
+        position: absolute;
+        left: 10%;
+        display: none;
+    }
+    @media screen and (max-width: 1050px){
+        .menu-full-size-inside{
+            display: none;
+        }
+        .Menu-icon{
+            display: block;
+        }
+        .logo-container-mobile{
+            display: block;
+        }
+    }
+    /*------------------Menu-Top-Full-Screen-----------------*/
+    .main-container{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        justify-content: center;
+        top: 50px;
+        margin-top: 30px;
+    }
+    .main-contain{
+        border-radius: 20px;
+        border: none;
+        border-bottom:solid 1px black;
+        width: 75%;
+        background-color: rgba(255, 255, 255, 0.945);
+        margin: auto;
+        margin-top: 20px;
+    }
+    .main-contain img {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-contain h1{
+        padding: 10px;
+        font-size: 35px;
+        color: rgb(236, 30, 30);
+        text-align: center;
+    }
+    .main-contain h2{
+        padding: 15px;
+        font-size: 30px;
+        color: rgb(236, 30, 30);
+    }
+    .main-contain p {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .main-contain ul{
+        list-style-type: disc;
+    }
+    .main-contain ul li{
+        display: list-item;
+    }
+    .main-contain p a{
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    .main-contain p a:hover{
+        font-size: 25px;
+        color: rgb(241, 20, 20);
+        transition: 0.3s;
+    }
+    .description{
+        width: fit-content;
+        display: block;
+        margin: auto;
+        color: rgba(158, 152, 152, 0.966);
+        font-size: 20px;
+        padding: 10px 0 10px 0;
+    }
+    /*------------------Main-Container-----------------------*/
+</style>
+<body>
+    <div class="menu-full-size">
+        <div class="menu-full-size-inside">
+            <div class="logo-container"><a href="/index.html"><img src="/img/logo_MDC.jpg" alt="Logo" class="logo"></a></div>
+            <div class="ul-container">
+                <ul class="ul-menu">
+                    <li class="li-menu"><a class="a-menu" href="/index.html">Home</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/KhauTrang.html">Hướng dẫn mang khẩu trang</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/RuaTay.html">Hướng dẫn rửa tay</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/KhoangCach.html">Hướng dẫn giữ khoảng cách</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/LienHe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+            <!-----------------MenuTopVersion-------------------->
+        <div class="logo-container-mobile"><a href="/index.html"><img src="/img/logo_MDC.jpg" alt="Logo" class="logo"></a></div>
+        <i src="" alt="" class="fa fa-bars Menu-icon" onclick="openNav()"></i>
+        <div class="menu-full-screen" id="menu-full-screen">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="ul-menu-full-screen">
+                <li class="li-menu"><a class="a-menu" href="/index.html">Home</a></li>
+                <li class="li-menu"><a class="a-menu" href="/KhauTrang.html">Hướng dẫn mang khẩu trang</a></li>
+                <li class="li-menu"><a class="a-menu" href="/RuaTay.html">Hướng dẫn rửa tay</a></li>
+                <li class="li-menu"><a class="a-menu" href="/KhoangCach.html">Hướng dẫn giữ khoảng cách</a></li>
+                <li class="li-menu"><a class="a-menu" href="/LienHe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--------------------Menu-Mobile----------------------------->
+    <div class="main-container">
+        <div class="main-contain">
+            <h1>VIRUS CORONA 2019 (COVID 19, SARS COV 2): NGUYÊN NHÂN & TRIỆU CHỨNG</h1>
+            <p>Virus Corona (Covid-19) gây bệnh viêm phổi cấp ở Vũ Hán là gì? Vì sao vi rút Corona lại lan nhanh thành dịch chỉ trong thời gian ngắn? Phòng ngừa, xét nghiệm, chẩn đoán và điều trị vi rút dịch Covid-19 bằng cách nào?… là những thắc mắc cần được thông tin chuẩn xác</p>
+            <h2>Covid-19 là gì ?</h2>
+            <p>Bùng phát vào cuối tháng 12/2019, bắt nguồn từ một chợ hải sản ở Hồ Nam, Vũ Hán, miền Trung Trung Quốc, virus Corona ban đầu được xác nhận là một loại bệnh “viêm phổi lạ” hoặc “viêm phổi không rõ nguyên nhân”. Chỉ sau 100 ngày xuất hiện, đại dịch viêm đường hô hấp cấp do virus Corona đã nhanh chóng tác động tới các lĩnh vực kinh tế, xã hội, thị trường tài chính chao đảo, nền kinh tế toàn cầu rơi vào suy thoái với tỷ lệ thất nghiệp và nghèo đói chưa từng có trong lịch sử.</p>
+            <p>Tổ chức Y tế Thế giới (WHO) cho biết tên gọi chính thức của bệnh viêm đường hô hấp cấp do chủng mới của vi-rút corona (nCoV) là Covid 19. Tên gọi mới này gọi tắt của coronavirus disease 2019, theo các từ khóa “corona”, “virus”, “disease” (dịch bệnh) và 2019 là năm mà loại virus gây đại dịch này xuất hiện.</p>
+            <p>Tháng 2/2020, Ủy ban quốc tế về phân loại Virus – International Committee on Taxonomy of Viruses (ICTV) chính thức đặt tên cho chủng mới của vi-rút corona là Sars-CoV-2. Đây là tên gọi khác với tên Covid 19 mà WHO đã chỉ định trước đó.</p>
+            <p>Các nhà khoa học đã tiến hành nghiên cứu và phân lập được một chủng corona virus mới, được Tổ chức Y tế Thế giới (WHO) tạm thời gọi là 2019-nCoV có trình tự gen giống với Sars-CoV trước đây, với mức tương đồng lên tới 79,5%.</p>
+            <a href="/img/Dich_Trung_Quoc.jpg" target="_blank"><img src="/img/Dich_Trung_Quoc.jpg" alt="Diễn biến dịch ở Trung Quốc"></a>
+            <div class="description">Tình hình dịch ở Trung Quốc</div>
+        </div>
+        <div class="main-contain">
+            <h2>Virus Sars Cov 2 được cấu tạo như thế nào?</h2>
+            <p>Giống như các loại virus khác, virus Sars Cov 2 tiến hành thâm nhập sâu vào bên trong tế bào, thuần hóa tế bào thành cỗ máy nhân bản, nhân virus lên gấp nhiều lần. Nếu mục tiêu này hoàn thành, lượng virus Sars Cov 2 đủ lớn để phá vỡ hệ miễn dịch, khiến cơ thể không đủ đề kháng chống lại và nhiễm bệnh.</p>
+            <ul>
+                <p>
+                    Virus Sars Cov 2 có dạng hình cầu, đường kính xấp xỉ 125 nanomet, với cấu tạo theo thứ tự từ trong ra ngoài như sau:
+                </p>
+                <li><p>+ Lõi acid Nucleic: Đây là bộ gen của virus với kích thước 26-32 kilobase, đây là kích thước lớn nhất trong số các loại virus ARN. Lõi acid Nucleic chứa sợi ARN đơn dương (sợi phân tử polyme có vai trò sinh học trong mã hóa, dịch mã, điều hòa, và biểu hiện của gen), giúp virus tiến hành nhân bản nhanh hơn.</p></li>
+                <li><p>+ Vỏ Protein: Lớp vỏ này đóng vai trò bảo vệ, được bao bọc bên ngoài bộ gen.</p></li>
+                <li><p>+ Lớp vỏ ngoài: Vỏ ngoài bao gồm lớp kép lipit và protein, bên trên có lớp gai protein thực hiện các nhiệm vụ của kháng nguyên, giúp virus xâm nhập vào các tế bào dễ dàng.</p></li>
+            </ul>
+            <h2>Hệ gen của virus corona là gì?</h2>
+            <p>
+                Bộ gen của virus corona là bộ gen lớn nhất trong số các virus RNA, bao gồm các vùng: vùng 5’UTR, khung đọc mở, vùng 3’UTR và cuối cùng là đuôi-poly (A).
+            </p>
+            <p>
+                Có 4 protein cấu trúc được bảo tồn trên các CoV đó là protein (S), protein màng (M), protein vỏ (E) và nucleocapsid (N) protein. Trong đó, Protein S chịu trách nhiệm liên kết với tế bào vật chủ và là thụ thể để virus xâm nhập vào tế bào. Các protein M, E và N là một phần của nucleocapsid của các hạt virus.
+            </p>
+            <a href="/img/cau-truc-sar-covi-2.jpg" target="_blank"><img src="/img/cau-truc-sar-covi-2.jpg" alt="Cấu trúc SARS-COV-2"></a>
+            <div class="description">Cấu trúc SAR-COV-2</div>
+        </div>
+        <div class="main-contain">
+            <h2>Virus Corona gây bệnh như thế nào?</h2>
+            <p>Hầu hết các loại virus Corona có con đường lây truyền giống như những loại virus gây cảm lạnh khác, đó là:</p>
+            <p>+ Người bệnh ho và hắt hơi mà không che miệng, dẫn tới phát tán các giọt nước vào không khí, làm lây lan virus sang người khỏe mạnh.</p>
+            <p>+ Người khỏe mạnh chạm hoặc bắt tay với người có virus Corona khiến virus truyền từ người này sang người khác.</p>
+            <p>+ Người khỏe mạnh tiếp xúc với một bề mặt hoặc vật thể có virus, sau đó đưa tay lên mũi, mắt hoặc miệng của mình.</p>
+            <p>+ Trong những trường hợp hiếm hoi, virus Corona có thể lây lan qua tiếp xúc với phân.</p>
+            <a href="/img/trieu-chung-covid-19.jpg"><img src="/img/trieu-chung-covid-19.jpg" alt="Triệu chứng COVID-19"></a>
+            <div class="description">Triệu chứng COVID-19</div>
+        </div>
+        <div class="main-contain">
+            <h2>Diễn biến dịch bệnh Covid hiện nay</h2>
+            <p>Theo Số liệu từ Bộ Y Tế, tính thới thời điểm 18 giờ ngày 21/05/2021. Số ca nhiễm Covid-19 ở Việt Nam và trên thế giới vẫn tiếp tục tăng</p>
+            <a target="_blank" href="/img/SoCaNhiem.jpg"><img src="/img/SoCaNhiem.jpg" alt="So Ca Nhiem Covid-19"></a>
+            <div class="description">Nguồn: https://ncov.moh.gov.vn/</div>
+            <p>Để biết cập nhật thêm những thông tin mới nhất về tình hình dịch bệnh hãy truy cập <a href="https://ncov.moh.gov.vn/" target="_blank">https://ncov.moh.gov.vn/</a></p>
+        </div>
+        <div class="main-contain">
+            <h2>Cách phòng ngừa virus Corona</h2>
+            <p>Để chủ động phòng, chống dịch gây ra do nCov bùng phát, Bộ Y tế kêu gọi người dân Việt Nam cùng thực hiện chung sống an toàn cùng đại dịch 19 với thông điệp 5K:</p>
+            <p><a href="">+ Khẩu trang</a></p>
+            <p><a href="">+ Khử khuẩn</a></p>
+            <p><a href="">+ Khoảng cách</a></p>
+            <p><a>+ Không tụ tập</a></p>
+            <p><a>+ Khai báo y tế</a></p>
+            <p>Đặc biệt, khi có dấu hiệu sốt, ho, khó thở… người dân cần liên hệ ngay với cơ sở y tế để được tư vấn, hỗ trợ, hướng dẫn đi khám bệnh đảm bảo an toàn.</p>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("menu-full-screen").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("menu-full-screen").style.height = "0%";
+        }
+        </script>
+</body>
+</html>

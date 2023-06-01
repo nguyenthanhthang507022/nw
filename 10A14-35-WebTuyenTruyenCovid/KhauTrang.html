@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=3.0, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hướng dẫn mang khẩu trang</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    body{
+        background-image: url(/img/GettyImages-1215392772.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    /*---------body----------*/
+    .menu-full-size{
+        height: 50px;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        line-height: 50px;
+        z-index: 1;
+    }
+    .menu-full-size-inside{
+        height: 50px;
+        max-width: 80%;
+        width: 100%;
+        margin: auto;
+        display:block;
+    }
+    .logo-container{
+        min-width: fit-content;
+        position: absolute;
+        left: 15%;
+    }
+    .ul-container{
+        position: absolute;
+        right: 10%;
+    }
+    .ul-menu{
+        display: inline-flex;
+    }
+    .li-menu{
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+    .a-menu{
+        text-decoration: none;
+        color: rgb(35, 62, 180);
+    }
+    .a-menu:hover{
+        color: rgb(238, 71, 65);
+        transition: 0.3s;
+    }
+    /*--------------Menu-Top---------------*/
+    .menu-full-screen{
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: rgba(0,0,0, 0.9);;
+        width: 100%;
+        height: 0%;
+        text-align: center;
+        overflow-y: hidden;
+        transition: 0.5s;
+        z-index: 1;
+        overflow-y: scroll;
+    }
+    .menu-full-screen ul li{
+        padding: 8px;
+        text-decoration: none;
+        font-size: 30px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .menu-full-screen ul{
+        margin-top: 30px;
+    }
+    .closebtn {
+        text-decoration: none;
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 100px;
+        color: skyblue;
+    }
+    .closebtn:hover{
+        color: rgb(16, 58, 141);
+    }
+    .Menu-icon{
+        display: none;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        font-size: 40px;
+    }
+    .Menu-icon:after{
+        content: '';
+        clear: both;
+    }
+    .logo-container-mobile{
+        min-width: fit-content;
+        position: absolute;
+        left: 10%;
+        display: none;
+    }
+    @media screen and (max-width: 1050px){
+        .menu-full-size-inside{
+            display: none;
+        }
+        .Menu-icon{
+            display: block;
+        }
+        .logo-container-mobile{
+            display: block;
+        }
+    }
+    /*------------------Menu-Top-Full-Screen-----------------*/
+    .main-container{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        justify-content: center;
+        top: 50px;
+        margin-top: 30px;
+    }
+    .main-contain{
+        border-radius: 20px;
+        border: none;
+        border-bottom:solid 1px black;
+        width: 75%;
+        background-color: rgba(255, 255, 255, 0.945);
+        margin: auto;
+        margin-top: 20px;
+    }
+    .main-contain img {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-contain h1{
+        padding: 10px;
+        font-size: 35px;
+        color: rgb(236, 30, 30);
+        text-align: center;
+    }
+    .main-contain h2{
+        padding: 15px;
+        font-size: 30px;
+        color: rgb(236, 30, 30);
+    }
+    .main-contain p {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .main-contain ul{
+        list-style-type: disc;
+    }
+    .main-contain ul li{
+        display: list-item;
+    }
+    .main-contain p a{
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    .main-contain p a:hover{
+        font-size: 25px;
+        color: rgb(241, 20, 20);
+        transition: 0.3s;
+    }
+    .description{
+        width: fit-content;
+        display: block;
+        margin: auto;
+        color: rgba(158, 152, 152, 0.966);
+        font-size: 20px;
+        padding: 10px 0 10px 0;
+    }
+    /*------------------Main-Container-----------------------*/
+</style>
+<body>
+    <div class="menu-full-size">
+        <div class="menu-full-size-inside">
+            <div class="logo-container"><a href="/index.html"><img src="/img/logo_MDC.jpg" alt="Logo" class="logo"></a></div>
+            <div class="ul-container">
+                <ul class="ul-menu">
+                    <li class="li-menu"><a class="a-menu" href="/index.html">Home</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/KhauTrang.html">Hướng dẫn mang khẩu trang</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/RuaTay.html">Hướng dẫn rửa tay</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/KhoangCach.html">Hướng dẫn giữ khoảng cách</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/LienHe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+            <!-----------------MenuTopVersion-------------------->
+        <div class="logo-container-mobile"><a href="/index.html"><img src="/img/logo_MDC.jpg" alt="Logo" class="logo"></a></div>
+        <i src="" alt="" class="fa fa-bars Menu-icon" onclick="openNav()"></i>
+        <div class="menu-full-screen" id="menu-full-screen">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="ul-menu-full-screen">
+                <li class="li-menu"><a class="a-menu" href="/index.html">Home</a></li>
+                <li class="li-menu"><a class="a-menu" href="/KhauTrang.html">Hướng dẫn mang khẩu trang</a></li>
+                <li class="li-menu"><a class="a-menu" href="/RuaTay.html">Hướng dẫn rửa tay</a></li>
+                <li class="li-menu"><a class="a-menu" href="/KhoangCach.html">Hướng dẫn giữ khoảng cách</a></li>
+                <li class="li-menu"><a class="a-menu" href="/LienHe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--------------------Menu-Mobile----------------------------->
+    <div class="main-container">
+        <div class="main-contain">
+            <h1>Hướng dẫn lựa chọn và sử dụng khẩu trang</h1>
+            <h2>Mặt nạ N95</h2>
+            <p>CDC khuyến nghị rằng mặt nạ N95 nên được ưu tiên để bảo vệ chống lại COVID-19 trong môi trường chăm sóc sức khỏe. Người lao động trong lĩnh vực thiết yếu và nhân viên thường đeo mặt nạ trước đại dịch vẫn nên tiếp tục đeo mặt nạ N95. Vì mặt nạ N95 bắt đầu có nhiều hơn, chúng có thể được dùng trong môi trường không phải là nơi chăm sóc sức khỏe.</p>
+            <a href="/img/khau_trang_n95.jpg"><img src="/img/khau_trang_n95.jpg" alt="Khẩu Trang N95"></a>
+            <div class="description">Khẩu trang N95</div>
+        </div>
+        <div class="main-contain">
+            <h2>Một số loại khẩu trang khác</h2>
+            <a href="/img/cac-loai-khau-trang-khac.jpg"><img src="/img/cac-loai-khau-trang-khac.jpg" alt="Các Loại khẩu trang khác"></a>
+            <div class="description">Một số loại khẩu trang khác</div>
+        </div>
+        <div class="main-contain">
+            <h2>Cách đeo khẩu trang</h2>
+            <p>- Bước 1: Rửa tay đúng cách với xà phòng hoặc dung dịch rửa tay sát khuẩn có chứa ít nhất 60% cồn trước khi đeo khẩu trang.</p>
+            <p>- Bước 2: Xác định phần trên, dưới của khẩu trang.</p>
+            <p>- Bước 3: Xác định mặt trong, ngoài theo đường may hoặc mặt đậm hơn ở bên ngoài.</p>
+            <p>- Bước 4: Đeo và điều chỉnh để khẩu trang che kín mũi, miệng đảm bảo không có khe hở giữa mặt và khẩu trang.</p>
+            <p>Lưu ý: Không chạm tay vào mặt ngoài khẩu trang trong suốt quá trình sử dụng. Nếu chạm vào phải rửa tay đúng cách với xà phòng hoặc dung dịch rửa tay sát khuẩn có chứa ít nhất 60% cồn.</p>
+            <a href="/img/Cach-deo-khau-trang-dung.jpg" target="_blank"><img src="/img/Cach-deo-khau-trang-dung.jpg" alt="Cách đeo khẩu trang đúng"></a>
+            <div class="description">Cách đeo khẩu trang đúng</div>
+        </div>
+        <div class="main-contain">
+            <h2>Thải bỏ khẩu trang</h2>
+            <p>- Bước 1: Khi tháo khẩu trang chỉ cầm phần dây đeo sau tai (không chạm vào mặt ngoài của khẩu trang).</p>
+            <p>- Bước 2: Bỏ khẩu trang vào túi kín (nếu có) và/hoặc bỏ vào thùng rác có nắp đậy kín đối với khẩu trang dùng 1 lần.</p>
+            <p>- Bước 3: Rửa tay đúng cách với xà phòng hoặc dung dịch rửa tay sát khuẩn có chứa ít nhất 60% cồn.</p>
+            <p>Lưu ý: Thay hoặc thải bỏ khẩu trang sau: mỗi lần sử dụng hoặc khi bị bẩn. Tuyệt đối không dùng lại đối với khẩu trang dùng 1 lần.</p>
+            <a href="/img/Deo-khau-trang-sai.jpg" target="_blank"><img src="/img/Deo-khau-trang-sai.jpg" alt=""></a>
+            <div class="description">Đeo khẩu trang sai</div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("menu-full-screen").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("menu-full-screen").style.height = "0%";
+        }
+    </script>
+</body>
+</html>

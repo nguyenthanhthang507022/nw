@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=3.0, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rửa Tay Đúng Cách</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    body{
+        background-image: url(/img/GettyImages-1215392772.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    /*---------body----------*/
+    .menu-full-size{
+        height: 50px;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        line-height: 50px;
+        z-index: 1;
+    }
+    .menu-full-size-inside{
+        height: 50px;
+        max-width: 80%;
+        width: 100%;
+        margin: auto;
+        display:block;
+    }
+    .logo-container{
+        min-width: fit-content;
+        position: absolute;
+        left: 15%;
+    }
+    .ul-container{
+        position: absolute;
+        right: 10%;
+    }
+    .ul-menu{
+        display: inline-flex;
+    }
+    .li-menu{
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+    .a-menu{
+        text-decoration: none;
+        color: rgb(35, 62, 180);
+    }
+    .a-menu:hover{
+        color: rgb(238, 71, 65);
+        transition: 0.3s;
+    }
+    /*--------------Menu-Top---------------*/
+    .menu-full-screen{
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: rgba(0,0,0, 0.9);;
+        width: 100%;
+        height: 0%;
+        text-align: center;
+        overflow-y: hidden;
+        transition: 0.5s;
+        z-index: 1;
+        overflow-y: scroll;
+    }
+    .menu-full-screen ul li{
+        padding: 8px;
+        text-decoration: none;
+        font-size: 30px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .menu-full-screen ul{
+        margin-top: 30px;
+    }
+    .closebtn {
+        text-decoration: none;
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 100px;
+        color: skyblue;
+    }
+    .closebtn:hover{
+        color: rgb(16, 58, 141);
+    }
+    .Menu-icon{
+        display: none;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        font-size: 40px;
+    }
+    .Menu-icon:after{
+        content: '';
+        clear: both;
+    }
+    .logo-container-mobile{
+        min-width: fit-content;
+        position: absolute;
+        left: 10%;
+        display: none;
+    }
+    @media screen and (max-width: 1050px){
+        .menu-full-size-inside{
+            display: none;
+        }
+        .Menu-icon{
+            display: block;
+        }
+        .logo-container-mobile{
+            display: block;
+        }
+    }
+    /*------------------Menu-Top-Full-Screen-----------------*/
+    .main-container{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        justify-content: center;
+        top: 50px;
+        margin-top: 30px;
+    }
+    .main-contain{
+        border-radius: 20px;
+        border: none;
+        border-bottom:solid 1px black;
+        width: 75%;
+        background-color: rgba(255, 255, 255, 0.945);
+        margin: auto;
+        margin-top: 20px;
+    }
+    .main-contain img {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-contain h1{
+        padding: 10px;
+        font-size: 35px;
+        color: rgb(236, 30, 30);
+        text-align: center;
+    }
+    .main-contain h2{
+        padding: 15px;
+        font-size: 30px;
+        color: rgb(236, 30, 30);
+    }
+    .main-contain p {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .main-contain ul{
+        list-style-type: disc;
+    }
+    .main-contain ul li{
+        display: list-item;
+    }
+    .main-contain p a{
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    .main-contain p a:hover{
+        font-size: 25px;
+        color: rgb(241, 20, 20);
+        transition: 0.3s;
+    }
+    .description{
+        width: fit-content;
+        display: block;
+        margin: auto;
+        color: rgba(158, 152, 152, 0.966);
+        font-size: 20px;
+        padding: 10px 0 10px 0;
+    }
+    /*------------------Main-Container-----------------------*/
+</style>
+<body>
+    <div class="menu-full-size">
+        <div class="menu-full-size-inside">
+            <div class="logo-container"><a href="/index.html"><img src="/img/logo_MDC.jpg" alt="Logo" class="logo"></a></div>
+            <div class="ul-container">
+                <ul class="ul-menu">
+                    <li class="li-menu"><a class="a-menu" href="/index.html">Home</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/KhauTrang.html">Hướng dẫn mang khẩu trang</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/RuaTay.html">Hướng dẫn rửa tay</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/KhoangCach.html">Hướng dẫn giữ khoảng cách</a></li>
+                    <li class="li-menu"><a class="a-menu" href="/LienHe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+            <!-----------------MenuTopVersion-------------------->
+        <div class="logo-container-mobile"><a href="/index.html"><img src="/img/logo_MDC.jpg" alt="Logo" class="logo"></a></div>
+        <i src="" alt="" class="fa fa-bars Menu-icon" onclick="openNav()"></i>
+        <div class="menu-full-screen" id="menu-full-screen">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="ul-menu-full-screen">
+                <li class="li-menu"><a class="a-menu" href="/index.html">Home</a></li>
+                <li class="li-menu"><a class="a-menu" href="/KhauTrang.html">Hướng dẫn mang khẩu trang</a></li>
+                <li class="li-menu"><a class="a-menu" href="/RuaTay.html">Hướng dẫn rửa tay</a></li>
+                <li class="li-menu"><a class="a-menu" href="/KhoangCach.html">Hướng dẫn giữ khoảng cách</a></li>
+                <li class="li-menu"><a class="a-menu" href="/LienHe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--------------------Menu-Mobile----------------------------->
+    <div class="main-container">
+        <div class="main-contain">
+            <h1>Hướng dẫn rửa tay đúng cách</h1>
+            <h2>Vì sao cần rửa tay để phòng bệnh</h2>
+            <p>Virus gây bệnh viêm đường hô hấp cấp COVID-19 (chủng mới của Coronavirus) lây lan khi dịch nhầy hay dịch tiết đường hô hấp chứa virus xâm nhập cơ thể chúng ta từ mắt, mũi, họng qua giọt bắn khi tiếp xúc trực tiếp với người bệnh hoặc thông qua bàn tay chạm vào những vật dụng trung gian chứa virus rồi đưa lên mặt. Vì vậy, “Bàn tay không an toàn” cũng chính là “công cụ” phổ biến nhất khiến virus lây lan từ người này sang người khác. Do đó, chặn đứng con đường virus xâm nhập vào cơ thể bằng việc rửa tay thường xuyên và sạch sẽ là hết sức quan trọng.</p>
+            <p>Mỗi ngày chúng ta đều phải tiếp xúc, với những đồ vật có nguy cơ chứa các tác nhân gây bệnh (virus, vi khuẩn, nấm…) mà không hề hay biết như tay nắm cửa, nút điều khiển thang máy, công tắc đèn hoặc bắt tay người khác… Bàn tay thường cũng là nơi trực tiếp tiếp xúc nhiều với dịch tiết cơ thể. Virus gây bệnh có thể theo dịch tiết lan rộng ngoài cộng đồng khi chúng ta vô tình đưa tay lên mắt, mũi, miệng hay chạm vào người hoặc vật khác.</p>
+            <p>Trong tình hình đại dịch hoành hành trên toàn thế giới như hiện nay, một trong những biện pháp đơn giản, kinh tế, dễ thực hiện, nhưng lại rất quan trọng và hiệu quả để phòng tránh virus lây lan là rửa tay thường xuyên bằng xà phòng và nước sạch, dung dịch cồn y tế chứa ít nhất 60% cồn, hoặc sử dụng dung dịch sát khuẩn có chứa ít nhất 60% cồn. WHO khuyến cáo người dân rửa tay thường xuyên với xà bông/xà phòng/nước rửa tay… có thể giảm được 44% sự lây truyền các bệnh hô hấp.</p>
+            <a href="/img/T4_Bai_A_-6_bc_ra_tay_ung_cach.png" target="_blank"><img src="/img/T4_Bai_A_-6_bc_ra_tay_ung_cach.png" alt="Rửa tay đúng cách"></a>
+            <div class="description">Quy trình rửa tay 6 bước của Bộ Y tế</div>
+        </div>
+        <div class="main-contain">
+            <h2>Khi nào cần rửa tay</h2>
+            <p>Để phòng ngừa lây nhiễm COVID-19, chúng ta cần rửa tay vào những thời điểm sau:</p>
+            <p>Sau khi trở về từ nơi công cộng: Những nơi công cộng luôn tiềm ẩn nhiều rủi ro do tiếp xúc với nhiều người, cầm nắm vào nhiều vật dụng chung. Trước và sau khi ăn uống: Vi khuẩn có thể xâm nhập cơ thể qua đường hô hấp hay miệng, vì vậy cần rửa tay đúng cách trước khi ăn để tránh virus đi trực tiếp vào cơ thể và sau khi ăn để giữ đôi tay luôn sạch sẽ nếu có cầm, chạm vào thức ăn. Sau khi đi vệ sinh: Nhà vệ sinh là nơi chứa rất nhiều vi khuẩn gây bệnh và một số nghiên cứu mới đây cảnh báo SARS-CoV-2 có thể lây nhiễm qua đường phân. Vì vậy, rửa tay đúng cách sau khi đi vệ sinh là rất cần thiết.</p>
+            <p>Ngoài ra, trước khi chuẩn bị thức ăn, điều trị vết thương, chạm vào người bệnh và sau khi xì mũi, ho, hắt hơi, chạm vào động vật và vật nuôi, thay tã lót cho em bé hoặc giúp trẻ đi vệ sinh, xử lý rác thải… cũng cần rửa tay đúng cách để kịp thời loại bỏ virus, vi khuẩn.</p>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("menu-full-screen").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("menu-full-screen").style.height = "0%";
+        }
+        </script>
+</body>
+</html>
